@@ -1,0 +1,124 @@
+{
+  "redirects": [
+    {
+      "source": "/post/finalizou-o-inventário-cuidado-pra-não-pular-a-etapa-mais-importante",
+      "destination": "/artigos/inventario-formal-partilha",
+      "permanent": true
+    },
+    {
+      "source": "/post/finalizou-o-invent%C3%A1rio-cuidado-pra-n%C3%A3o-pular-a-etapa-mais-importante",
+      "destination": "/artigos/inventario-formal-partilha",
+      "permanent": true
+    },
+    {
+      "source": "/post/advocacia-extrajudicial-no-direito-imobiliário-resolva-seu-caso-sem-processo-judicial",
+      "destination": "/artigos/advocacia-extrajudicial",
+      "permanent": true
+    },
+    {
+      "source": "/post/advocacia-extrajudicial-no-direito-imobili%C3%A1rio-resolva-seu-caso-sem-processo-judicial",
+      "destination": "/artigos/advocacia-extrajudicial",
+      "permanent": true
+    },
+    {
+      "source": "/post/assinou-contrato-e-quer-desistir-do-imóvel",
+      "destination": "/artigos/distrato-imobiliario",
+      "permanent": true
+    },
+    {
+      "source": "/post/assinou-contrato-e-quer-desistir-do-im%C3%B3vel",
+      "destination": "/artigos/distrato-imobiliario",
+      "permanent": true
+    },
+    {
+      "source": "/post/checklist-rápido-para-não-errar-na-compra-do-seu-imóvel",
+      "destination": "/artigos/checklist-compra-segura",
+      "permanent": true
+    },
+    {
+      "source": "/post/checklist-r%C3%A1pido-para-n%C3%A3o-errar-na-compra-do-seu-im%C3%B3vel",
+      "destination": "/artigos/checklist-compra-segura",
+      "permanent": true
+    },
+    {
+      "source": "/post/vale-a-pena-comprar-um-imóvel-na-planta",
+      "destination": "/artigos/imovel-na-planta",
+      "permanent": true
+    },
+    {
+      "source": "/post/vale-a-pena-comprar-um-im%C3%B3vel-na-planta",
+      "destination": "/artigos/imovel-na-planta",
+      "permanent": true
+    },
+    {
+      "source": "/post/proteja-seu-imóvel-antes-de-alugar-as-cláusulas-essenciais-para-evitar-prejuízos",
+      "destination": "/artigos/locacao-segura",
+      "permanent": true
+    },
+    {
+      "source": "/post/proteja-seu-im%C3%B3vel-antes-de-alugar-as-cl%C3%A1usulas-essenciais-para-evitar-preju%C3%ADzos",
+      "destination": "/artigos/locacao-segura",
+      "permanent": true
+    },
+    {
+      "source": "/post/erros-mais-comuns-na-regularização-de-imóveis",
+      "destination": "/artigos/erros-regularizacao",
+      "permanent": true
+    },
+    {
+      "source": "/post/erros-mais-comuns-na-regulariza%C3%A7%C3%A3o-de-im%C3%B3veis",
+      "destination": "/artigos/erros-regularizacao",
+      "permanent": true
+    },
+    {
+      "source": "/post/cuidado-com-o-contrato-de-gaveta-você-pode-estar-em-risco-de-perder-seu-imóvel",
+      "destination": "/artigos/contrato-de-gaveta",
+      "permanent": true
+    },
+    {
+      "source": "/post/cuidado-com-o-contrato-de-gaveta-voc%C3%AA-pode-estar-em-risco-de-perder-seu-im%C3%B3vel",
+      "destination": "/artigos/contrato-de-gaveta",
+      "permanent": true
+    },
+    {
+      "source": "/post/parcelas-em-atraso-o-que-pode-acontecer-com-seu-imóvel",
+      "destination": "/artigos/parcelas-em-atraso",
+      "permanent": true
+    },
+    {
+      "source": "/post/parcelas-em-atraso-o-que-pode-acontecer-com-seu-im%C3%B3vel",
+      "destination": "/artigos/parcelas-em-atraso",
+      "permanent": true
+    },
+    {
+      "source": "/post/descomplicando-o-direito-imobiliário-como-meu-trabalho-pode-te-ajudar",
+      "destination": "/artigos/descomplicando-direito-imobiliario",
+      "permanent": true
+    },
+    {
+      "source": "/post/descomplicando-o-direito-imobili%C3%A1rio-como-meu-trabalho-pode-te-ajudar",
+      "destination": "/artigos/descomplicando-direito-imobiliario",
+      "permanent": true
+    },
+    {
+      "source": "/book-online/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/book-online",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/booking-calendar/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio-collections/:path*",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
