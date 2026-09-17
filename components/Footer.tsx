@@ -94,11 +94,11 @@ export default function Footer() {
                 <circle cx="12" cy="10" r="3" />
               </svg>
               <a
-                href="https://maps.google.com/?q=Rua+Trist%C3%A3o+de+Castro,+676,+Bairro+S%C3%A3o+Benedito,+Uberaba+-+MG"
+                href="https://maps.google.com/?q=Giselly+Maria+de+Morais+Advogada+Especialista+em+Direito+Imobili%C3%A1rio+Uberaba"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: 'inherit', textDecoration: 'none' }}
-                title="Abrir no Google Maps"
+                title="Abrir perfil no Google Maps"
               >
                 Rua Tristão de Castro, 676, Bairro São Benedito, Uberaba - MG
               </a>

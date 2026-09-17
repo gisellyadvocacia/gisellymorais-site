@@ -55,9 +55,15 @@ export const legalServiceSchema = {
       '@type': 'LegalService',
       '@id': ATTORNEY_ID,
       name: 'Dra. Giselly Morais - Advocacia Imobiliária e Sucessória',
-      alternateName: 'Giselly Morais Advogada',
+      alternateName: [
+        'Giselly Maria de Morais | Advogada Especialista em Direito Imobiliário',
+        'Giselly Morais Advogada',
+        'Dra. Giselly Morais',
+      ],
       image: `${SITE_URL}/images/hero.jpg`,
       url: SITE_URL,
+      hasMap:
+        'https://maps.google.com/?q=Giselly+Maria+de+Morais+Advogada+Especialista+em+Direito+Imobili%C3%A1rio+Uberaba',
       telephone: '+55-34-99288-1500',
       email: 'gisellyadvocacia@gmail.com',
       founder: { '@id': PERSON_ID },
@@ -87,6 +93,7 @@ export const legalServiceSchema = {
         },
       ],
       sameAs: [
+        'https://www.google.com/search?q=Giselly+Maria+de+Morais+%7C+Advogada+Especialista+em+Direito+Imobili%C3%A1rio',
         'https://www.instagram.com/gisellymoraisadv/',
         'https://www.facebook.com/share/85fmUVdDaPRjiyyA/',
         'https://www.linkedin.com/in/giselly-morais-advogada-imobiliarista-a57344263',
