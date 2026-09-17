@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Montserrat, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
+import GoogleAdsTracker from '@/components/GoogleAdsTracker';
 import './globals.css';
 
 const montserrat = Montserrat({
@@ -100,6 +101,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" type="image/png" />
       </head>
       <body>
+        <GoogleAdsTracker />
         {/* Google tag (gtag.js) - Google Ads */}
         <Script
           strategy="afterInteractive"
