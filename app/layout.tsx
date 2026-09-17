@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from 'next';
-import { Montserrat, Playfair_Display } from 'next/font/google';
+import { DM_Sans, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
 import GoogleAdsTracker from '@/components/GoogleAdsTracker';
 import './globals.css';
 
-const montserrat = Montserrat({
+const dmSans = DM_Sans({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
   variable: '--font-body',
@@ -13,14 +13,14 @@ const montserrat = Montserrat({
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
-  weight: ['400', '600', '700'],
+  weight: ['400', '500', '600', '700'],
   style: ['normal', 'italic'],
   variable: '--font-heading',
   display: 'swap',
 });
 
 export const viewport: Viewport = {
-  themeColor: '#0a0a0a',
+  themeColor: '#0e1b18',
   width: 'device-width',
   initialScale: 1,
   viewportFit: 'cover',
@@ -33,18 +33,18 @@ export const metadata: Metadata = {
     template: '%s | Dra. Giselly Morais',
   },
   description:
-    'Advogada imobiliária em Uberaba/MG. Especialista em regularização de imóveis, usucapião, contratos e inventários em cartório. Dra. Giselly Morais (OAB 171.639).',
+    'Advogada imobiliária em Uberaba/MG. Especialista em regularização de imóveis, usucapião, auditoria preventiva de contratos e inventários em cartório. Dra. Giselly Morais (OAB/MG 171.639).',
   icons: {
     icon: '/favicon.png',
   },
   keywords: [
-    'advogado imobiliário uberaba',
+    'advogado imobiliario uberaba',
     'advocacia imobiliaria uberaba',
-    'regularização de imóveis uberaba',
-    'usucapião uberaba',
-    'inventario uberaba mg',
+    'regularizacao de imoveis uberaba',
+    'usucapiao extrajudicial uberaba',
+    'inventario em cartorio uberaba mg',
     'contrato compra e venda imovel',
-    'advogada direito imobiliario',
+    'advogada direito imobiliario uberaba',
     'dra giselly morais',
   ],
   authors: [{ name: 'Dra. Giselly Maria de Morais' }],
@@ -96,13 +96,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`${montserrat.variable} ${playfair.variable}`}>
+    <html lang="pt-BR" className={`${dmSans.variable} ${playfair.variable}`}>
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
       </head>
       <body>
         <GoogleAdsTracker />
-        {/* Google tag (gtag.js) - Google Ads */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=AW-16658443724"
