@@ -172,6 +172,20 @@ h1, h2, h3, h4, .font-heading {
   color: var(--gold-primary);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-drawer-cta {
+  display: none;
+}
+
+.nav-backdrop {
+  display: none;
+}
+
 .nav-toggle {
   display: none;
   background: transparent;
@@ -1044,6 +1058,125 @@ h1, h2, h3, h4, .font-heading {
   margin-top: 60px;
 }
 
+/* Breakpoint para Navbar Mobile / Tablet (1024px) */
+@media (max-width: 1024px) {
+  .navbar-inner {
+    height: 72px;
+    padding: 0 16px;
+  }
+
+  .nav-logo img {
+    height: 38px;
+    max-width: 155px;
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+
+  /* 1. O menu horizontal desktop FICA ESTRITAMENTE OCULTO NO MOBILE */
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 72px);
+    height: calc(100dvh - 72px);
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    padding: 24px 20px 48px;
+    gap: 0;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    overflow-y: auto;
+    z-index: 1001;
+    transform: translateY(-8px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  }
+
+  /* 2. Drawer aberto com fluidez */
+  .nav-links.active {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 16px 6px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--transition);
+  }
+
+  .nav-links a:hover,
+  .nav-links a:active {
+    color: var(--gold-primary);
+    padding-left: 10px;
+  }
+
+  .nav-drawer-cta {
+    display: block;
+    margin-top: 24px;
+    width: 100%;
+  }
+
+  .nav-drawer-cta .btn {
+    width: 100%;
+  }
+
+  /* Botão de WhatsApp/Telefone visível no cabeçalho mobile */
+  .nav-cta {
+    display: inline-flex;
+    padding: 8px 12px;
+    font-size: 0.82rem;
+    gap: 6px;
+    border-radius: 6px;
+  }
+
+  /* Botão Hambúrguer visível no cabeçalho mobile */
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 8px;
+    color: var(--gold-primary);
+    font-size: 1.35rem;
+    cursor: pointer;
+    transition: var(--transition);
+    line-height: 1;
+  }
+
+  .nav-toggle:hover {
+    background: rgba(212, 175, 55, 0.15);
+  }
+
+  .nav-backdrop {
+    display: block;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 72px);
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1000;
+  }
+}
+
 @media (max-width: 860px) {
   .hero-grid, .sobre-grid, .footer-grid, .ebook-card-box {
     grid-template-columns: 1fr;
@@ -1055,31 +1188,25 @@ h1, h2, h3, h4, .font-heading {
   .artigo-single-header h1 {
     font-size: 1.9rem;
   }
-  .nav-links {
-    display: none;
-    position: fixed;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background: #0a0a0a;
-    flex-direction: column;
-    padding: 30px;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .nav-toggle {
-    display: block;
-  }
-  .nav-cta {
-    display: none;
-  }
   .mobile-sticky-cta {
     display: block;
   }
   .whatsapp-float {
     bottom: 80px;
     right: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .nav-cta-text {
+    display: none;
+  }
+  .nav-cta {
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .nav-logo img {
+    height: 34px;
+    max-width: 130px;
   }
 }
