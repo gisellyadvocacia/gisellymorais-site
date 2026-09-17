@@ -111,15 +111,22 @@ h1, h2, h3, h4, .font-heading {
 }
 
 .btn-whatsapp {
-  background-color: var(--accent-whatsapp);
-  color: #ffffff;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+  background: linear-gradient(135deg, #b89b5e 0%, #d4be8d 50%, #b89b5e 100%);
+  color: #0e1b18;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(184, 155, 94, 0.35);
+  border: 1px solid rgba(239, 222, 205, 0.35);
 }
 
 .btn-whatsapp:hover {
-  background-color: var(--accent-whatsapp-hover);
+  background: linear-gradient(135deg, #c7aa6c 0%, #e2d0a8 50%, #c7aa6c 100%);
+  color: #050b0a;
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.45);
+  box-shadow: 0 8px 25px rgba(184, 155, 94, 0.5);
+}
+
+.btn-whatsapp svg {
+  color: #0e1b18;
 }
 
 .btn-gold-outline {
@@ -1610,13 +1617,10 @@ h1, h2, h3, h4, .font-heading {
 
   /* No mobile, barra fixa inferior com safe-area do iOS e oculta o botão flutuante duplo */
   .mobile-sticky-cta {
-    display: block;
-    padding: 12px 16px;
-    padding-bottom: max(12px, env(safe-area-inset-bottom));
-    box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.75);
+    display: none !important;
   }
   .whatsapp-float {
-    display: none !important;
+    display: flex !important;
   }
 
   /* Indicadores numéricos de autoridade */
