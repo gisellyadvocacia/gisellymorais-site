@@ -93,7 +93,15 @@ export default function Footer() {
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
-              Rua Tristão de Castro, 676, Bairro São Benedito, Uberaba - MG
+              <a
+                href="https://maps.google.com/?q=Rua+Trist%C3%A3o+de+Castro,+676,+Bairro+S%C3%A3o+Benedito,+Uberaba+-+MG"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: 'inherit', textDecoration: 'none' }}
+                title="Abrir no Google Maps"
+              >
+                Rua Tristão de Castro, 676, Bairro São Benedito, Uberaba - MG
+              </a>
             </p>
             <p className="oab-highlight">Dra. Giselly Morais • OAB/MG 171.639</p>
           </div>

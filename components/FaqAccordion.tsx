@@ -100,6 +100,8 @@ export default function FaqAccordion() {
           <div key={item.q} className={`faq-item glass-panel${isOpen ? ' active' : ''}`}>
             <button
               type="button"
+              id={`faq-btn-${i}`}
+              aria-controls={`faq-content-${i}`}
               className="faq-question"
               aria-expanded={isOpen}
               onClick={() => setOpen(isOpen ? null : i)}
@@ -110,6 +112,9 @@ export default function FaqAccordion() {
               </span>
             </button>
             <div
+              id={`faq-content-${i}`}
+              role="region"
+              aria-labelledby={`faq-btn-${i}`}
               className="faq-answer"
               style={{ maxHeight: isOpen ? 480 : 0 }}
             >
