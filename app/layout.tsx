@@ -31,7 +31,11 @@ export const metadata: Metadata = {
     default: 'Dra. Giselly Morais | Advogada Imobiliária e Sucessória em Uberaba MG',
     template: '%s | Dra. Giselly Morais',
   },
-  description: 'Assessoria jurídica especializada em Direito Imobiliário e Sucessório em Uberaba/MG. Regularização de imóveis, usucapião, contratos de compra e venda, inventários e partilhas. Dra. Giselly Morais (OAB/MG 171.639).',
+  description:
+    'Advogada imobiliária em Uberaba/MG. Especialista em regularização de imóveis, usucapião, contratos e inventários em cartório. Dra. Giselly Morais (OAB 171.639).',
+  icons: {
+    icon: '/favicon.png',
+  },
   keywords: [
     'advogado imobiliário uberaba',
     'advocacia imobiliaria uberaba',

@@ -61,10 +61,10 @@ export default function Footer() {
             <h4 className="footer-title">Navegação Rápida</h4>
             <ul className="footer-links">
               <li><Link href="/#inicio">Início</Link></li>
+              <li><Link href="/#sobre">A Especialista</Link></li>
               <li><Link href="/#servicos">Especialidades</Link></li>
               <li><Link href="/#ebook">Ebook Grátis</Link></li>
               <li><Link href="/#artigos">Orientações</Link></li>
-              <li><Link href="/#sobre">A Especialista</Link></li>
               <li><Link href="/#faq">Dúvidas Frequentes</Link></li>
             </ul>
           </div>

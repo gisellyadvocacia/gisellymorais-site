@@ -489,6 +489,7 @@ h1, h2, h3, h4, .font-heading {
   border: 1px solid rgba(212, 175, 55, 0.35);
 }
 
+.ebook-info h2,
 .ebook-info h3 {
   font-size: 2rem;
   color: #fff;
@@ -622,8 +623,10 @@ h1, h2, h3, h4, .font-heading {
 
 /* Sobre */
 .sobre-section {
-  padding: 100px 0;
-  background-color: var(--bg-primary);
+  padding: 90px 0;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
 }
 
 .sobre-grid {

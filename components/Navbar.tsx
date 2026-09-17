@@ -41,10 +41,10 @@ export default function Navbar() {
         </Link>
         <nav className={`nav-links${open ? ' active' : ''}`}>
           <Link href="/#inicio" onClick={close}>Início</Link>
+          <Link href="/#sobre" onClick={close}>A Especialista</Link>
           <Link href="/#servicos" onClick={close}>Serviços</Link>
           <Link href="/#ebook" onClick={close}>Ebook Grátis</Link>
           <Link href="/#artigos" onClick={close}>Orientações</Link>
-          <Link href="/#sobre" onClick={close}>A Especialista</Link>
           <Link href="/#faq" onClick={close}>Dúvidas</Link>
           <Link href="/#contato" onClick={close}>Contato</Link>
         </nav>

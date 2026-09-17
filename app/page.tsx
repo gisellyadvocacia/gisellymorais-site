@@ -91,7 +91,61 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. SITUAÇÕES */}
+      {/* 2. SOBRE — A ESPECIALISTA (Posicionamento Estratégico no Topo / Mobile-First) */}
+      <section id="sobre" className="sobre-section">
+        <div className="container sobre-grid">
+          <div className="sobre-image-wrapper">
+            <div className="sobre-image-frame">
+              <Image
+                src="/images/profile.jpg"
+                alt="Dra. Giselly Maria de Morais - Advogada Imobiliária em Uberaba"
+                width={440}
+                height={587}
+                className="sobre-image"
+              />
+            </div>
+          </div>
+          <div className="sobre-content">
+            <span className="sobre-label">A ESPECIALISTA</span>
+            <h2>Dra. Giselly Morais</h2>
+            <span className="sobre-oab">OAB/MG nº 171.639</span>
+            <div className="sobre-bio">
+              <p>
+                Sou <strong>Giselly Maria de Morais</strong>, advogada especializada em{' '}
+                <strong>Direito Imobiliário e Direito Sucessório</strong>. Graduei-me em Direito pela
+                Universidade de Uberaba (UNIUBE) em 2015 e pós-graduei-me pelo CERS.
+              </p>
+              <p>
+                Acredito que a advocacia vai muito além de solucionar conflitos jurídicos: exige uma
+                abordagem humana e acolhedora, onde cada cliente é ouvido com empatia e dedicação.
+              </p>
+              <p>
+                Meu compromisso é descomplicar processos, garantir total segurança nas suas
+                negociações e proteger o patrimônio que você levou anos para construir.
+              </p>
+            </div>
+            <div className="numeros-inline">
+              <div className="num-box">
+                <strong>+9 Anos</strong>
+                <span>De Formação Jurídica</span>
+              </div>
+              <div className="num-box">
+                <strong>Especialista</strong>
+                <span>Imobiliário &amp; Sucessório</span>
+              </div>
+              <div className="num-box">
+                <strong>100%</strong>
+                <span>Foco em Segurança</span>
+              </div>
+            </div>
+            <a href={WA} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
+              Falar com a Dra. Giselly
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. SITUAÇÕES */}
       <section id="situacoes" className="dores-section">
         <div className="container">
           <div className="section-header">
@@ -166,7 +220,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. SERVIÇOS */}
+      {/* 4. SERVIÇOS */}
       <section id="servicos" className="servicos-section">
         <div className="container">
           <div className="section-header">
@@ -256,7 +310,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. EBOOK */}
+      {/* 5. EBOOK */}
       <section id="ebook" className="ebook-section">
         <div className="container">
           <div className="ebook-card-box">
@@ -270,7 +324,7 @@ export default function HomePage() {
             </div>
             <div className="ebook-info">
               <span className="section-tag">EBOOK GRATUITO EM PDF</span>
-              <h3>5 Passos para Regularizar seu Imóvel sem Complicações</h3>
+              <h2>5 Passos para Regularizar seu Imóvel sem Complicações</h2>
               <p>
                 Descubra os procedimentos práticos e indispensáveis para transformar contratos de
                 gaveta ou imóveis sem escritura em propriedades 100% regulares, valorizadas e
@@ -294,7 +348,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. ARTIGOS — 10 páginas reais */}
+      {/* 6. ARTIGOS — Orientações Práticas */}
       <section id="artigos" style={{ backgroundColor: 'var(--surface-color)', padding: '100px 0' }}>
         <div className="container">
           <div className="section-header">
@@ -330,7 +384,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. ATENDIMENTO */}
+      {/* 7. ATENDIMENTO */}
       <section id="atendimento" className="como-funciona-section">
         <div className="container">
           <div className="section-header">
@@ -366,60 +420,6 @@ export default function HomePage() {
           <div className="section-center-cta">
             <a href={WA} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
               Iniciar Atendimento pelo WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* 7. SOBRE */}
-      <section id="sobre" className="sobre-section">
-        <div className="container sobre-grid">
-          <div className="sobre-image-wrapper">
-            <div className="sobre-image-frame">
-              <Image
-                src="/images/profile.jpg"
-                alt="Dra. Giselly Maria de Morais - Advogada Imobiliária em Uberaba"
-                width={440}
-                height={587}
-                className="sobre-image"
-              />
-            </div>
-          </div>
-          <div className="sobre-content">
-            <span className="sobre-label">A ESPECIALISTA</span>
-            <h2>Dra. Giselly Morais</h2>
-            <span className="sobre-oab">OAB/MG nº 171.639</span>
-            <div className="sobre-bio">
-              <p>
-                Sou <strong>Giselly Maria de Morais</strong>, advogada especializada em{' '}
-                <strong>Direito Imobiliário e Direito Sucessório</strong>. Graduei-me em Direito pela
-                Universidade de Uberaba (UNIUBE) em 2015 e pós-graduei-me pelo CERS.
-              </p>
-              <p>
-                Acredito que a advocacia vai muito além de solucionar conflitos jurídicos: exige uma
-                abordagem humana e acolhedora, onde cada cliente é ouvido com empatia e dedicação.
-              </p>
-              <p>
-                Meu compromisso é descomplicar processos, garantir total segurança nas suas
-                negociações e proteger o patrimônio que você levou anos para construir.
-              </p>
-            </div>
-            <div className="numeros-inline">
-              <div className="num-box">
-                <strong>+9 Anos</strong>
-                <span>De Formação Jurídica</span>
-              </div>
-              <div className="num-box">
-                <strong>Especialista</strong>
-                <span>Imobiliário &amp; Sucessório</span>
-              </div>
-              <div className="num-box">
-                <strong>100%</strong>
-                <span>Foco em Segurança</span>
-              </div>
-            </div>
-            <a href={WA} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
-              Falar com a Dra. Giselly
             </a>
           </div>
         </div>

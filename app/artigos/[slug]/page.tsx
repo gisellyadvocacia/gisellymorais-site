@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
-import JsonLd, { ATTORNEY_ID, SITE_URL } from '@/components/JsonLd';
+import JsonLd, { ATTORNEY_ID, PERSON_ID, SITE_URL } from '@/components/JsonLd';
 import { artigos, getArtigoBySlug } from '@/lib/artigos-data';
 
 type Props = { params: { slug: string } };
@@ -35,6 +35,12 @@ export function generateMetadata({ params }: Props): Metadata {
       authors: ['Dra. Giselly Maria de Morais'],
       section: artigo.categoria,
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: artigo.titulo,
+      description: artigo.metaDescription,
+      images: ['/images/hero.jpg'],
+    },
   };
 }
 
@@ -47,27 +53,56 @@ export default function ArtigoPage({ params }: Props) {
 
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    '@id': url,
-    headline: artigo.titulo,
-    description: artigo.metaDescription,
-    datePublished: artigo.dataPublicacao,
-    dateModified: artigo.dataModificacao,
-    inLanguage: 'pt-BR',
-    articleSection: artigo.categoria,
-    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-    author: {
-      '@type': 'Person',
-      name: 'Dra. Giselly Maria de Morais',
-      url: ATTORNEY_ID,
-    },
-    publisher: {
-      '@type': 'LegalService',
-      '@id': ATTORNEY_ID,
-      name: 'Dra. Giselly Morais - Advocacia Imobiliária e Sucessória',
-      logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/logo-adv.png` },
-    },
-    image: `${SITE_URL}/images/hero.jpg`,
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        '@id': `${url}#article`,
+        headline: artigo.titulo,
+        description: artigo.metaDescription,
+        datePublished: artigo.dataPublicacao,
+        dateModified: artigo.dataModificacao,
+        inLanguage: 'pt-BR',
+        articleSection: artigo.categoria,
+        mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+        author: {
+          '@type': 'Person',
+          '@id': PERSON_ID,
+          name: 'Dra. Giselly Maria de Morais',
+          url: SITE_URL,
+        },
+        publisher: {
+          '@type': 'LegalService',
+          '@id': ATTORNEY_ID,
+          name: 'Dra. Giselly Morais - Advocacia Imobiliária e Sucessória',
+          logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/logo-adv.png` },
+        },
+        image: `${SITE_URL}/images/hero.jpg`,
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${url}#breadcrumb`,
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Início',
+            item: SITE_URL,
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Orientações',
+            item: `${SITE_URL}/artigos`,
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: artigo.titulo,
+            item: url,
+          },
+        ],
+      },
+    ],
   };
 
   const relacionados = artigos.filter((a) => a.slug !== artigo.slug).slice(0, 3);
@@ -79,11 +114,28 @@ export default function ArtigoPage({ params }: Props) {
       <main className="artigo-single-container">
         <article>
           <header className="artigo-single-header">
-            <p>
-              <Link href="/#artigos" className="artigo-link" style={{ marginTop: 0 }}>
-                ← Voltar às orientações
+            <nav
+              aria-label="Trilha de navegação"
+              style={{
+                marginBottom: 20,
+                fontSize: '0.88rem',
+                color: 'var(--text-muted)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 8,
+                flexWrap: 'wrap',
+              }}
+            >
+              <Link href="/" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
+                Início
               </Link>
-            </p>
+              <span>›</span>
+              <Link href="/artigos" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
+                Orientações
+              </Link>
+              <span>›</span>
+              <span style={{ color: 'var(--gold-primary)' }}>{artigo.categoria}</span>
+            </nav>
             <span className="section-tag">{artigo.categoria}</span>
             <h1>{artigo.titulo}</h1>
             <div className="artigo-meta-bar">
