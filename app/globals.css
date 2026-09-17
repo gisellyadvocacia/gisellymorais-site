@@ -200,74 +200,109 @@ h1, h2, h3, h4, .font-heading {
   cursor: pointer;
 }
 
-/* Hero Section */
+/* Hero Section — Editorial Luxury (Boutique Jurídica de Alto Padrão) */
 .hero {
   position: relative;
-  padding: 160px 0 100px;
+  padding: 135px 0 60px;
   overflow: hidden;
-  background: radial-gradient(circle at 70% 30%, rgba(212, 175, 55, 0.08) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 75% 35%, rgba(212, 175, 55, 0.08) 0%, rgba(10, 10, 10, 0) 65%), #0a0a0a;
 }
 
 .hero-bg-glow {
   position: absolute;
-  top: -20%;
-  right: -10%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.12) 0%, transparent 70%);
-  filter: blur(80px);
+  top: -10%;
+  right: -5%;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.12) 0%, rgba(212, 175, 55, 0) 70%);
+  filter: blur(90px);
   pointer-events: none;
+  z-index: 0;
 }
 
 .hero-grid {
+  position: relative;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 50px;
-  align-items: center;
+  gap: 40px;
+  align-items: flex-end;
+  z-index: 1;
 }
 
-.hero-badges {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.badge {
+/* Eyebrow Pill */
+.hero-eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
   background: rgba(212, 175, 55, 0.08);
-  border: 1px solid rgba(212, 175, 55, 0.25);
-  color: var(--gold-primary);
-  padding: 6px 14px;
+  border: 1px solid rgba(212, 175, 55, 0.28);
   border-radius: 50px;
-  font-size: 0.78rem;
-  font-weight: 600;
+  padding: 6px 18px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(8px);
 }
 
-.badge svg {
-  width: 14px;
-  height: 14px;
+.hero-badge-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--gold-light);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.hero-badge-separator {
+  color: rgba(212, 175, 55, 0.5);
+  font-size: 0.75rem;
 }
 
 .hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
+  font-family: var(--font-heading);
+  font-size: 3.1rem;
+  font-weight: 600;
+  line-height: 1.18;
   color: #ffffff;
+  margin-bottom: 22px;
+  letter-spacing: -0.02em;
+}
+
+.hero-title-gold {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  display: inline;
 }
 
 .hero-lead {
-  font-size: 1.1rem;
+  font-size: 1.12rem;
   color: var(--text-secondary);
-  line-height: 1.7;
+  line-height: 1.75;
   margin-bottom: 36px;
+  max-width: 580px;
 }
 
+/* Hero CTA */
 .hero-cta-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 14px;
+}
+
+.hero-cta-btn {
+  padding: 16px 36px;
+  font-size: 1.02rem;
+  border-radius: 50px;
   gap: 12px;
+  align-self: flex-start;
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.35);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-cta-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 35px rgba(37, 211, 102, 0.5);
 }
 
 .microcopy {
@@ -287,74 +322,92 @@ h1, h2, h3, h4, .font-heading {
   box-shadow: 0 0 8px var(--accent-whatsapp);
 }
 
-.hero-image-frame {
-  width: 100%;
-  max-width: 430px;
-  aspect-ratio: 4/5;
-  border-radius: 24px;
-  overflow: hidden;
-  border: 1px solid rgba(212, 175, 55, 0.35);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.15);
-  background: #111;
-  margin: 0 auto;
-}
-
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  display: block;
-}
-
-.hero-image-frame {
+/* Silhueta Imersiva da Advogada (Sem molduras/caixinhas) */
+.hero-visual-col {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.hero-badge-overlay {
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-  right: 16px;
-  background: rgba(10, 10, 10, 0.88);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(212, 175, 55, 0.35);
-  border-radius: 14px;
-  padding: 10px 14px;
+.hero-silhouette-container {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 440px;
+}
+
+/* Halo de luz de estúdio (ambient backlight) */
+.hero-silhouette-backlight {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;
+  height: 480px;
+  background: radial-gradient(circle at 50% 40%, rgba(212, 175, 55, 0.22) 0%, rgba(212, 175, 55, 0.06) 50%, transparent 75%);
+  filter: blur(50px);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-silhouette-img {
+  position: relative;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 580px;
+  object-fit: contain;
+  object-position: bottom center;
+  z-index: 1;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.8));
+}
+
+/* Badge flutuante de autoridade */
+.hero-authority-pill {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 15, 15, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.1);
   z-index: 2;
+  white-space: nowrap;
 }
 
-.hero-badge-overlay-icon {
-  width: 34px;
-  height: 34px;
+.hero-pill-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--gold-primary);
   border-radius: 50%;
-  background: rgba(212, 175, 55, 0.15);
-  border: 1px solid var(--gold-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--gold-primary);
+  box-shadow: 0 0 10px var(--gold-primary);
   flex-shrink: 0;
 }
 
-.hero-badge-overlay strong {
+.hero-authority-pill strong {
   display: block;
   font-family: var(--font-heading);
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   color: #ffffff;
   line-height: 1.2;
 }
 
-.hero-badge-overlay span {
+.hero-authority-pill span {
   display: block;
   font-size: 0.74rem;
   color: var(--gold-light);
-  margin-top: 1px;
+  line-height: 1.2;
 }
 
 /* Dores / Situações */
@@ -1255,7 +1308,43 @@ h1, h2, h3, h4, .font-heading {
 @media (max-width: 860px) {
   /* Espaçamentos verticais mobile otimizados */
   .hero {
-    padding: 105px 0 50px;
+    padding: 95px 0 40px;
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .hero-eyebrow {
+    margin: 0 auto 18px;
+  }
+  .hero-lead {
+    margin: 0 auto 24px;
+  }
+  .hero-cta-btn {
+    align-self: center;
+    width: 100%;
+    max-width: 380px;
+  }
+  .microcopy {
+    justify-content: center;
+  }
+  .hero-silhouette-container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .hero-silhouette-img {
+    max-height: 440px;
+  }
+  .hero-silhouette-backlight {
+    width: 280px;
+    height: 360px;
+  }
+  .hero-authority-pill {
+    bottom: 12px;
+    padding: 8px 16px;
+    white-space: normal;
+    text-align: left;
+    border-radius: 16px;
+    max-width: 90%;
   }
   .sobre-section,
   .dores-section,

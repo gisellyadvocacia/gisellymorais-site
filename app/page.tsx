@@ -26,75 +26,65 @@ export default function HomePage() {
       <JsonLd data={legalServiceSchema} />
       <Navbar />
 
-      {/* 1. HERO */}
+      {/* 1. HERO — EDITORIAL LUXURY & SILHUETA IMERSIVA */}
       <section id="inicio" className="hero">
         <div className="hero-bg-glow" />
         <div className="container hero-grid">
           <div className="hero-content">
-            <div className="hero-badges">
-              <span className="badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <div className="hero-eyebrow">
+              <span className="hero-badge-item">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 </svg>
                 OAB/MG nº 171.639
               </span>
-              <span className="badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <span className="hero-badge-separator" aria-hidden="true">•</span>
+              <span className="hero-badge-item">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                Escritório em Uberaba / MG
-              </span>
-              <span className="badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                  <polyline points="22 4 12 14.01 9 11.01" />
-                </svg>
-                Direito Imobiliário &amp; Sucessório
+                Uberaba / MG
               </span>
             </div>
 
             <h1>
-              Assessoria Jurídica Especializada em{' '}
-              <span className="text-gold italic">Direito Imobiliário e Sucessório</span>
+              Segurança e Proteção Jurídica para o seu{' '}
+              <span className="hero-title-gold">Patrimônio Imobiliário e Sucessório</span>
             </h1>
             <p className="hero-lead">
-              Orientação clara, soluções eficazes e uma advocacia comprometida em proteger seu
-              patrimônio, regularizar seus imóveis e garantir segurança absoluta em todas as suas
-              transações.
+              Regularização de imóveis, auditoria preventiva de contratos e inventários extrajudiciais
+              conduzidos com rigor técnico, agilidade em cartório e atendimento humanizado.
             </p>
 
             <div className="hero-cta-wrapper">
-              <a href={WA} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
+              <a href={WA} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp hero-cta-btn">
                 <IconWa />
-                Falar no WhatsApp
+                <span>Falar com a Dra. Giselly no WhatsApp</span>
               </a>
               <span className="microcopy">
-                <i className="dot-online" />
-                Resposta rápida pelo WhatsApp • (34) 99288-1500
+                <i className="dot-online" aria-hidden="true" />
+                Atendimento direto e personalizado • (34) 99288-1500
               </span>
             </div>
           </div>
 
-          <div className="hero-image-wrapper">
-            <div className="hero-image-frame">
+          <div className="hero-visual-col">
+            <div className="hero-silhouette-container">
+              <div className="hero-silhouette-backlight" aria-hidden="true" />
               <Image
-                src="/images/hero.jpg"
-                alt="Dra. Giselly Morais - Advogada Especialista em Direito Imobiliário em Uberaba"
-                width={460}
-                height={580}
-                className="hero-image"
+                src="/images/giselly-hero-transparente.png"
+                alt="Dra. Giselly Morais - Advogada Especialista em Direito Imobiliário e Sucessório em Uberaba"
+                width={408}
+                height={612}
+                className="hero-silhouette-img"
                 priority
               />
-              <div className="hero-badge-overlay">
-                <div className="hero-badge-overlay-icon">
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  </svg>
-                </div>
+              <div className="hero-authority-pill">
+                <span className="hero-pill-dot" aria-hidden="true" />
                 <div>
                   <strong>Dra. Giselly Morais</strong>
-                  <span>Advocacia Imobiliária &amp; Sucessória</span>
+                  <span>Especialista em Direito Imobiliário &amp; Sucessório</span>
                 </div>
               </div>
             </div>
