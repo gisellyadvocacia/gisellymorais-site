@@ -5,22 +5,24 @@ export default function Footer() {
   return (
     <footer className="footer" role="contentinfo">
       <div className="container">
+        {/* TOP TIER: 3 balanced columns */}
         <div className="footer-grid">
+          {/* Brand Column */}
           <div className="footer-brand">
-            <Link href="/#inicio" aria-label="Voltar ao topo da página inicial">
+            <Link href="/#inicio" className="footer-logo-link" aria-label="Voltar ao topo da página inicial">
               <Image
                 src="/images/logo-adv.svg"
                 alt="Dra. Giselly Morais - Advocacia Imobiliária e Sucessória"
-                width={220}
-                height={46}
+                width={320}
+                height={50}
                 className="footer-logo-img"
               />
             </Link>
-            <p>
+            <p className="footer-brand-desc">
               Assessoria jurídica especializada em Direito Imobiliário, Notarial, Registral e
               Sucessório para garantir solidez e segurança patrimonial em Uberaba e região.
             </p>
-            <div className="social-icons-wrap" style={{ marginTop: 20 }}>
+            <div className="social-icons-wrap">
               <a
                 href="https://www.instagram.com/gisellymoraisadv/"
                 target="_blank"
@@ -57,6 +59,7 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Navigation Column */}
           <div className="footer-nav">
             <h4 className="footer-title">Navegação Rápida</h4>
             <ul className="footer-links">
@@ -69,38 +72,58 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Contact Column */}
           <div className="footer-contact">
-            <h4 className="footer-title">Escritório &amp; Atendimento</h4>
-            <p className="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-              <a href="https://wa.me/5534992881500" target="_blank" rel="noopener noreferrer" aria-label="Ligar ou enviar mensagem no WhatsApp (34) 99288-1500">
-                (34) 99288-1500
-              </a>
-            </p>
-            <p className="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                <polyline points="22,6 12,13 2,6" />
-              </svg>
-              <a href="mailto:gisellyadvocacia@gmail.com" aria-label="Enviar e-mail para gisellyadvocacia@gmail.com">
-                gisellyadvocacia@gmail.com
-              </a>
-            </p>
+            <h4 className="footer-title">Atendimento Direto</h4>
+            <div className="footer-contact-items">
+              <p className="footer-contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <a href="https://wa.me/5534992881500" target="_blank" rel="noopener noreferrer" aria-label="Ligar ou enviar mensagem no WhatsApp (34) 99288-1500">
+                  (34) 99288-1500
+                </a>
+              </p>
+              <p className="footer-contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <a href="mailto:gisellyadvocacia@gmail.com" aria-label="Enviar e-mail para gisellyadvocacia@gmail.com">
+                  gisellyadvocacia@gmail.com
+                </a>
+              </p>
+              <p className="footer-contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <span>Segunda a Sexta: 08h30 às 18h</span>
+              </p>
+            </div>
+            <p className="oab-highlight">Dra. Giselly Morais • OAB/MG 171.639</p>
+          </div>
+        </div>
 
-            {/* CARD DE LOCALIZAÇÃO COM DIREÇÃO EXPLÍCITA PARA O GOOGLE MAPS */}
-            <div className="footer-location-card">
-              <div className="footer-location-info">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="footer-pin-svg" aria-hidden="true">
+        {/* MIDDLE TIER: CARD DE ATENDIMENTO PRESENCIAL / LOCALIZAÇÃO CENTRALIZADO PELA DIMENSÃO */}
+        <div className="footer-location-central">
+          <div className="footer-location-card">
+            <div className="footer-location-info">
+              <div className="footer-pin-wrap">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="footer-pin-svg" aria-hidden="true">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <div>
-                  <span className="footer-location-title">Atendimento Presencial</span>
-                  <p className="footer-location-addr">Rua Tristão de Castro, 676, Bairro São Benedito, Uberaba - MG</p>
-                </div>
               </div>
+              <div className="footer-location-text">
+                <span className="footer-location-title">Atendimento Presencial no Escritório</span>
+                <p className="footer-location-addr">
+                  Rua Tristão de Castro, 676, Bairro São Benedito, Uberaba - MG
+                </p>
+                <span className="footer-location-sub">Ambiente exclusivo para consultoria de patrimônio imobiliário e sucessório</span>
+              </div>
+            </div>
+            <div className="footer-location-action">
               <a
                 href="https://maps.google.com/?q=Giselly+Maria+de+Morais+Advogada+Especialista+em+Direito+Imobili%C3%A1rio+Uberaba"
                 target="_blank"
@@ -109,18 +132,17 @@ export default function Footer() {
                 title="Traçar rota para o escritório no Google Maps"
                 aria-label="Abrir localização do escritório no Google Maps e traçar rota"
               >
-                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <polygon points="3 11 22 2 13 21 11 13 3 11" />
                 </svg>
                 <span>Ver no Google Maps • Traçar Rota</span>
                 <span className="maps-external-icon" aria-hidden="true">↗</span>
               </a>
             </div>
-
-            <p className="oab-highlight">Dra. Giselly Morais • OAB/MG 171.639</p>
           </div>
         </div>
 
+        {/* BOTTOM TIER */}
         <div className="footer-bottom">
           <span>&copy; {new Date().getFullYear()} Dra. Giselly Maria de Morais - Todos os direitos reservados.</span>
           <span className="developer-credit">OAB/MG 171.639 • Uberaba/MG</span>

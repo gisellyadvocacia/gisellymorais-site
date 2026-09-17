@@ -34,8 +34,8 @@ export default function Navbar() {
           <Image
             src="/images/logo-adv.svg"
             alt="Dra. Giselly Morais - Advocacia Imobiliária e Sucessória"
-            width={194}
-            height={40}
+            width={340}
+            height={48}
             priority
             className="nav-logo-svg"
           />
@@ -44,7 +44,7 @@ export default function Navbar() {
           <Link href="/#inicio" onClick={close}>Início</Link>
           <Link href="/#sobre" onClick={close}>A Especialista</Link>
           <Link href="/#servicos" onClick={close}>Especialidades</Link>
-          <Link href="/#ebook" onClick={close}>Ebook &amp; Checklist</Link>
+          <Link href="/#ebook" onClick={close}>Ebook</Link>
           <Link href="/#artigos" onClick={close}>Orientações</Link>
           <Link href="/#faq" onClick={close}>Dúvidas</Link>
           <Link href="/#contato" onClick={close}>Contato</Link>
