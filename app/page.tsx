@@ -318,9 +318,10 @@ export default function HomePage() {
             <div className="ebook-cover">
               <Image
                 src="/images/ebook.jpg"
-                alt="Capa do Ebook: 5 Passos para regularizar seu Imóvel sem complicações"
-                width={270}
-                height={338}
+                alt="Guia em Livro 3D de Luxo: 5 Passos para Regularizar seu Imóvel - Dra. Giselly Morais"
+                width={300}
+                height={400}
+                className="ebook-cover-img"
               />
             </div>
             <div className="ebook-info">
