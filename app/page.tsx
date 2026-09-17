@@ -77,8 +77,8 @@ export default function HomePage() {
               <Image
                 src="/images/giselly-hero-transparente.png"
                 alt="Dra. Giselly Morais - Advogada Especialista em Direito Imobiliário e Sucessório em Uberaba"
-                width={807}
-                height={1600}
+                width={491}
+                height={933}
                 className="hero-silhouette-img"
                 priority
               />
