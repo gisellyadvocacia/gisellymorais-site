@@ -203,19 +203,19 @@ h1, h2, h3, h4, .font-heading {
 /* Hero Section — Editorial Luxury (Boutique Jurídica de Alto Padrão) */
 .hero {
   position: relative;
-  padding: 135px 0 60px;
+  padding: 140px 0 0;
   overflow: hidden;
-  background: radial-gradient(ellipse at 75% 35%, rgba(212, 175, 55, 0.08) 0%, rgba(10, 10, 10, 0) 65%), #0a0a0a;
+  background: radial-gradient(ellipse at 80% 30%, rgba(212, 175, 55, 0.12) 0%, rgba(20, 18, 14, 0.4) 40%, rgba(9, 9, 11, 1) 75%), #09090b;
 }
 
 .hero-bg-glow {
   position: absolute;
   top: -10%;
   right: -5%;
-  width: 650px;
-  height: 650px;
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.12) 0%, rgba(212, 175, 55, 0) 70%);
-  filter: blur(90px);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.14) 0%, rgba(212, 175, 55, 0) 70%);
+  filter: blur(100px);
   pointer-events: none;
   z-index: 0;
 }
@@ -224,7 +224,7 @@ h1, h2, h3, h4, .font-heading {
   position: relative;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 40px;
+  gap: 48px;
   align-items: flex-end;
   z-index: 1;
 }
@@ -259,9 +259,9 @@ h1, h2, h3, h4, .font-heading {
 
 .hero h1 {
   font-family: var(--font-heading);
-  font-size: 3.1rem;
+  font-size: 3.2rem;
   font-weight: 600;
-  line-height: 1.18;
+  line-height: 1.16;
   color: #ffffff;
   margin-bottom: 22px;
   letter-spacing: -0.02em;
@@ -288,6 +288,7 @@ h1, h2, h3, h4, .font-heading {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  margin-bottom: 50px;
 }
 
 .hero-cta-btn {
@@ -322,12 +323,13 @@ h1, h2, h3, h4, .font-heading {
   box-shadow: 0 0 8px var(--accent-whatsapp);
 }
 
-/* Silhueta Imersiva da Advogada (Sem molduras/caixinhas) */
+/* Silhueta Imersiva da Advogada — Presença Monumental & Recorte Perfeito */
 .hero-visual-col {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
+  height: 100%;
 }
 
 .hero-silhouette-container {
@@ -336,7 +338,8 @@ h1, h2, h3, h4, .font-heading {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 440px;
+  max-width: 540px;
+  margin-left: auto;
 }
 
 /* Halo de luz de estúdio (ambient backlight) */
@@ -345,10 +348,10 @@ h1, h2, h3, h4, .font-heading {
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
-  width: 380px;
-  height: 480px;
-  background: radial-gradient(circle at 50% 40%, rgba(212, 175, 55, 0.22) 0%, rgba(212, 175, 55, 0.06) 50%, transparent 75%);
-  filter: blur(50px);
+  width: 480px;
+  height: 540px;
+  background: radial-gradient(circle at 50% 40%, rgba(212, 175, 55, 0.28) 0%, rgba(212, 175, 55, 0.08) 55%, transparent 75%);
+  filter: blur(65px);
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
@@ -358,30 +361,32 @@ h1, h2, h3, h4, .font-heading {
   position: relative;
   width: auto;
   max-width: 100%;
-  height: auto;
-  max-height: 580px;
+  height: 680px;
+  max-height: 740px;
   object-fit: contain;
   object-position: bottom center;
   z-index: 1;
-  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.95));
+  mask-image: linear-gradient(to bottom, black 86%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 86%, transparent 100%);
 }
 
 /* Badge flutuante de autoridade */
 .hero-authority-pill {
   position: absolute;
-  bottom: 20px;
+  bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(15, 15, 15, 0.9);
+  background: rgba(14, 14, 18, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(212, 175, 55, 0.35);
   border-radius: 50px;
-  padding: 10px 20px;
+  padding: 10px 22px;
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.75), 0 0 20px rgba(212, 175, 55, 0.12), inset 0 1px 1px rgba(255, 255, 255, 0.12);
   z-index: 2;
   white-space: nowrap;
 }
@@ -413,7 +418,7 @@ h1, h2, h3, h4, .font-heading {
 /* Dores / Situações */
 .dores-section {
   padding: 100px 0;
-  background-color: var(--bg-secondary);
+  background-color: #0c0c0e;
   border-top: 1px solid rgba(212, 175, 55, 0.1);
   border-bottom: 1px solid rgba(212, 175, 55, 0.1);
 }
@@ -450,19 +455,35 @@ h1, h2, h3, h4, .font-heading {
   gap: 24px;
 }
 
-.glass-panel {
-  background: rgba(23, 23, 23, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius-md);
-  padding: 32px 24px;
+.dor-card {
+  position: relative;
+  background: rgba(18, 18, 22, 0.7);
+  border: 1px solid rgba(212, 175, 55, 0.16);
+  border-radius: 18px;
+  padding: 34px 26px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  transition: var(--transition);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
 }
 
-.glass-panel:hover {
-  border-color: rgba(212, 175, 55, 0.4);
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+.dor-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(212, 175, 55, 0.45);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.65), 0 0 25px rgba(212, 175, 55, 0.12);
+}
+
+.dor-num-tag {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(212, 175, 55, 0.35);
+  letter-spacing: 1px;
 }
 
 .dor-icon-wrap {
@@ -470,6 +491,7 @@ h1, h2, h3, h4, .font-heading {
   height: 52px;
   border-radius: 12px;
   background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -512,19 +534,20 @@ h1, h2, h3, h4, .font-heading {
 }
 
 .servico-card-visual {
-  background: rgba(17, 17, 17, 0.75);
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  border-radius: 18px;
+  background: rgba(18, 18, 22, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  border-radius: 20px;
   overflow: hidden;
-  transition: var(--transition);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
 }
 
 .servico-card-visual:hover {
   transform: translateY(-6px);
-  border-color: rgba(212, 175, 55, 0.55);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.6), 0 0 25px rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.18);
 }
 
 .servico-img-wrap {
@@ -540,11 +563,11 @@ h1, h2, h3, h4, .font-heading {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .servico-card-visual:hover .servico-img-wrap img {
-  transform: scale(1.06);
+  transform: scale(1.05);
 }
 
 .servico-body {
@@ -554,9 +577,19 @@ h1, h2, h3, h4, .font-heading {
   flex-direction: column;
 }
 
+.servico-tag-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--gold-primary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
 .servico-body h3 {
   font-size: 1.35rem;
-  color: var(--gold-primary);
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
@@ -575,10 +608,10 @@ h1, h2, h3, h4, .font-heading {
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* Ebook */
+/* Ebook & Checklist Jurídico */
 .ebook-section {
-  padding: 90px 0;
-  background: linear-gradient(180deg, #111111 0%, #0c0a06 100%);
+  padding: 100px 0;
+  background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.08) 0%, rgba(10, 10, 12, 0) 70%), #0c0c0e;
   border-top: 1px solid rgba(212, 175, 55, 0.15);
   border-bottom: 1px solid rgba(212, 175, 55, 0.15);
 }
@@ -586,13 +619,15 @@ h1, h2, h3, h4, .font-heading {
 .ebook-card-box {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
-  gap: 48px;
+  gap: 56px;
   align-items: center;
-  padding: 48px;
-  background: rgba(20, 20, 20, 0.8);
-  border: 1px solid rgba(212, 175, 55, 0.28);
-  border-radius: 24px;
-  box-shadow: 0 15px 45px rgba(0,0,0,0.6);
+  padding: 56px 52px;
+  background: rgba(18, 18, 22, 0.85);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 28px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65), inset 0 1px 1px rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .ebook-cover {
@@ -601,35 +636,64 @@ h1, h2, h3, h4, .font-heading {
   justify-content: center;
 }
 
-.ebook-cover img {
-  max-width: 290px;
-  width: 100%;
-  aspect-ratio: 3/4;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.85), 0 0 30px rgba(212, 175, 55, 0.22);
-  border: 1px solid rgba(212, 175, 55, 0.35);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+.ebook-cover-stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
 }
 
-.ebook-cover img:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 25px 55px rgba(0,0,0,0.9), 0 0 35px rgba(212, 175, 55, 0.35);
+.ebook-cover-img {
+  max-width: 100%;
+  width: 320px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.85), 0 0 35px rgba(212, 175, 55, 0.2);
+  transform: perspective(1000px) rotateY(-6deg) rotateX(2deg);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ebook-card-box:hover .ebook-cover-img {
+  transform: perspective(1000px) rotateY(-1deg) rotateX(0deg) scale(1.02);
 }
 
 .ebook-info h2,
 .ebook-info h3 {
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: #fff;
   margin-bottom: 16px;
   line-height: 1.25;
 }
 
-.ebook-info p {
-  color: var(--text-muted);
-  font-size: 1.02rem;
+.ebook-desc-lead {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
   line-height: 1.7;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.ebook-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ebook-features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.ebook-cta-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 /* Artigos Cards */
@@ -751,16 +815,14 @@ h1, h2, h3, h4, .font-heading {
 
 /* Sobre */
 .sobre-section {
-  padding: 90px 0;
-  background-color: var(--bg-secondary);
-  border-top: 1px solid rgba(212, 175, 55, 0.15);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  padding: 100px 0;
+  background-color: var(--bg-primary);
 }
 
 .sobre-grid {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
-  gap: 60px;
+  gap: 64px;
   align-items: center;
 }
 
@@ -833,6 +895,11 @@ h1, h2, h3, h4, .font-heading {
 .num-box span {
   font-size: 0.82rem;
   color: var(--text-muted);
+}
+
+.sobre-cta-wrap {
+  display: flex;
+  margin-top: 24px;
 }
 
 /* FAQ Accordion */
@@ -909,6 +976,35 @@ h1, h2, h3, h4, .font-heading {
   color: #fff;
 }
 
+.cta-final-lead {
+  max-width: 650px;
+  margin: 0 auto 32px;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.cta-buttons-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.contato-office-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 50px;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  margin-top: 12px;
+}
+
 /* Footer */
 .footer {
   background-color: #050505;
@@ -918,7 +1014,7 @@ h1, h2, h3, h4, .font-heading {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1.5fr;
+  grid-template-columns: 1.4fr 1fr 1.6fr;
   gap: 40px;
   margin-bottom: 60px;
 }
@@ -965,13 +1061,24 @@ h1, h2, h3, h4, .font-heading {
   color: var(--gold-primary);
 }
 
-.footer-contact p {
+.footer-contact p,
+.footer-contact-item {
   display: flex;
   gap: 12px;
-  align-items: flex-start;
+  align-items: center;
   color: var(--text-muted);
   font-size: 0.9rem;
   margin-bottom: 12px;
+}
+
+.footer-contact-item a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-contact-item a:hover {
+  color: var(--gold-primary);
 }
 
 .footer-contact svg {
@@ -979,7 +1086,76 @@ h1, h2, h3, h4, .font-heading {
   height: 18px;
   color: var(--gold-primary);
   flex-shrink: 0;
+}
+
+/* Card de Localização com Google Maps Explícito */
+.footer-location-card {
+  margin-top: 20px;
+  padding: 16px 18px;
+  background: rgba(22, 22, 26, 0.85);
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+.footer-location-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer-pin-svg {
+  color: var(--gold-primary) !important;
+  flex-shrink: 0;
   margin-top: 3px;
+}
+
+.footer-location-title {
+  display: block;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--gold-light);
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.footer-location-addr {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.btn-google-maps {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  color: var(--gold-light);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-google-maps:hover {
+  background: var(--gold-primary);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+}
+
+.maps-external-icon {
+  font-weight: 700;
+  font-size: 0.95rem;
 }
 
 .oab-highlight {
@@ -1314,7 +1490,7 @@ h1, h2, h3, h4, .font-heading {
 @media (max-width: 860px) {
   /* Espaçamentos verticais mobile otimizados */
   .hero {
-    padding: 95px 0 40px;
+    padding: 95px 0 20px;
   }
   .hero-content {
     text-align: center;
@@ -1325,6 +1501,9 @@ h1, h2, h3, h4, .font-heading {
   .hero-lead {
     margin: 0 auto 24px;
   }
+  .hero-cta-wrapper {
+    margin-bottom: 24px;
+  }
   .hero-cta-btn {
     align-self: center;
     width: 100%;
@@ -1334,23 +1513,26 @@ h1, h2, h3, h4, .font-heading {
     justify-content: center;
   }
   .hero-silhouette-container {
-    max-width: 320px;
-    margin: 0 auto;
+    max-width: 360px;
+    margin: 20px auto 0;
   }
   .hero-silhouette-img {
-    max-height: 440px;
+    height: auto;
+    max-height: 480px;
+    width: auto;
+    max-width: 90%;
   }
   .hero-silhouette-backlight {
-    width: 280px;
-    height: 360px;
+    width: 300px;
+    height: 380px;
   }
   .hero-authority-pill {
-    bottom: 12px;
-    padding: 8px 16px;
+    bottom: 16px;
+    padding: 10px 18px;
     white-space: normal;
     text-align: left;
     border-radius: 16px;
-    max-width: 90%;
+    max-width: 92%;
   }
   .sobre-section,
   .dores-section,
@@ -1366,6 +1548,38 @@ h1, h2, h3, h4, .font-heading {
     grid-template-columns: 1fr;
     gap: 36px;
   }
+
+  /* CENTRALIZAÇÃO PERFEITA NO MOBILE PARA A SESSÃO ESPECIALISTA */
+  .sobre-grid {
+    text-align: center;
+  }
+  .sobre-image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .sobre-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .sobre-bio {
+    text-align: center;
+  }
+  .sobre-cta-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .sobre-cta-wrap .btn {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
   .hero h1 {
     font-size: 2.15rem;
     line-height: 1.22;
@@ -1405,6 +1619,8 @@ h1, h2, h3, h4, .font-heading {
     gap: 12px;
     margin: 24px 0;
     padding: 16px 0;
+    width: 100%;
+    text-align: center;
   }
   .num-box strong {
     font-size: 1.3rem;
